@@ -1,0 +1,51 @@
+#Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
+#output * bg /home/boltstelsot/backup/Pictures/wallpapers/end.png fill
+output * bg /home/boltstelsot/.config/niri/bg.png fill
+
+# Logo key. Use Mod1 for Alt.
+set $mod Mod4
+
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+animation_duration_ms 100
+
+blur enable
+
+layer_effects "launcher" blur enable
+
+
+default_dim_inactive 0.3
+shadows enable
+shadow_inactive_color #ffffff00
+
+corner_radius 10
+
+# Your preferred terminal emulator
+set $term kitty
+
+# Your preferred application launcher
+#set $menu wmenu-run
+#set $menu wmenu-run -N 282828 -S ebdbb2 -s 282828 -n ebdbda -m ebdbda 
+set $menu fuzzel
+#Allowing tearing
+output * allow_tearing yes
+output * max_render_time off
+
+#Cursor theme
+seat seat0 xcursor_theme Qogir-Dark 24
+
+# Defining workspace names using Roman numerals
+set $ws1 I
+set $ws2 II
+set $ws3 III
+set $ws4 IV
+set $ws5 V
+set $ws6 VI
+set $ws7 VII
+set $ws8 VIII
+set $ws9 IX
+set $ws10 X

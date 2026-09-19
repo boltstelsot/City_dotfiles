@@ -1,0 +1,15 @@
+gaps inner 4
+gaps outer 4
+default_border pixel 0
+#smart_gaps on
+#smart_borders on
+
+workspace_layout default
+# class                    border      background     text        indicator   child_border
+#client.focused             #727148      #727148     #ebdbda     #727148     #727148
+client.focused		   #A89984	#A89984     #3C3836	#A89984     #A89984
+client.unfocused           #3C3836      #3C3836     #EBDBB2     #CC241D     #504945
+client.focused_inactive    #3C3836      #EBDBB2     #3C3836     #000000     #00000000
+
+#for_window [app_id = "firefox"] border pixel 0
+#for_window [app_id = "lutris"] border pixel 0
