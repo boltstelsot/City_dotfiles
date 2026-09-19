@@ -1,0 +1,44 @@
+general {
+  colors = true
+  color_good = "#ebdbb2"
+  color_degraded = "#e0af68"
+  color_bad = "#cc241d"
+}
+
+order += "wireless _first_"
+order += "volume master"
+order += "battery all"
+order += "cpu_temperature 0"
+order += "tztime local"
+
+cpu_temperature 0 {
+    format = " %degrees°C"
+    path = "/sys/class/thermal/thermal_zone4/temp"
+}
+
+wireless _first_ {
+    format_up = "  %essid"
+    format_down = "WiFi down"
+}
+
+ethernet _first_ {
+    format_up = "Eth %ip"
+    format_down = "Eth down"
+}
+
+battery all {
+    format = " %status %percentage "
+    status_chr = " "
+    status_bat = " "
+    status_full = " "
+}
+
+volume master {
+    format = " %volume (%devicename)"
+    format_muted = "Vol muted"
+    device = "default"
+}
+
+tztime local {
+    format = "   %a,%b%d - %l:%M%P "
+}
